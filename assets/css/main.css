@@ -890,7 +890,7 @@ section,
       color-mix(in srgb, var(--background-color), transparent 100%),
       var(--background-color)
     ),
-    url("../img/boyband.jpg") center top no-repeat;
+    url("https://media.komchadluek.net/uploads/images/md/2022/10/ZcdO8PMASdFgEmmomiE2.webp?x-image-process=style/LG") center top no-repeat;
   background-size: cover;
 }
 
@@ -1074,7 +1074,7 @@ section,
 }
 
 .bg-bts {
-  background-image: url('../img/boyband.jpg');
+  background-image: url('https://media.komchadluek.net/uploads/images/md/2022/10/ZcdO8PMASdFgEmmomiE2.webp?x-image-process=style/LG');
   border-radius: 25px
 }
 
@@ -2710,13 +2710,19 @@ section,
 }
 .card-body {
   display: flex;
-  align-items: center;
-  gap: 1rem; /* jarak antara gambar & teks */
+  flex-direction: column; /* atur konten vertikal */
+  align-items: center;    /* rata tengah */
+  text-align: center;
+  gap: 1rem;
 }
+
 .card img {
-  width: 64px;  /* perbesar gambar */
-  height: 64px;
+  width: 200px;      /* atur lebar gambar */
+  height: auto;      /* biar tinggi menyesuaikan */
+  border-radius: 0;  /* hilangkan bulat, jadi kotak */
+  object-fit: contain;
 }
+
 .card small {
   font-size: 1.1rem; /* perbesar teks */
 }
